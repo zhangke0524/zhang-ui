@@ -135,7 +135,8 @@ import '@wocwin/t-ui-plus/lib/style.css'
 | TSelectTable             | [下拉选择表格组件](https://wocwin.github.io/t-ui-plus/components/TSelectTable/base.html?_blank)                                                            |
 | Virtualized TSelectTable | [下拉选择虚拟表格组件](https://wocwin.github.io/t-ui-plus/components/multipleVirtual/base.html?_blank)                                                     |
 | TSelectIcon              | [图标选择组件](https://wocwin.github.io/t-ui-plus/components/TSelectIcon/base.html?_blank)                                                                 |
-| TSelect                  | [下拉选择组件](https://wocwin.github.io/t-ui-plus/components/TSelect/base.html?_blank)                                                                     |
+| TSelect                  | [下拉选择组件](https://wocwin.github.io/t-ui-plus/components/TSelect/base.html?_blank)      
+| ZhangInput                  | [zhangke的组件](https://wocwin.github.io/t-ui-plus/components/ZhangInput/base.html?_blank)                                                                  |
 | TDetail                  | [详情组件](https://wocwin.github.io/t-ui-plus/components/TDetail/base.html?_blank)                                                                         |
 | TButton                  | [防抖按钮组件](https://wocwin.github.io/t-ui-plus/components/TButton/base.html?_blank)                                                                     |
 | TStepWizard              | [步骤条组件](https://wocwin.github.io/t-ui-plus/components/TStepWizard/base.html?_blank)                                                                   |

@@ -1,8 +1,11 @@
 {
-  "name": "@wocwin/t-ui-plus",
-  "version": "1.5.0",
-  "description": "Vue3 中基于Element-plus二次封装基础组件文档",
-  "author": "wocwin",
+  "name": "@zhangke-ui/t-ui-plus",
+  "version": "1.5.1",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "jignshi-Vue3 中基于Element-plus二次封装基础组件文档",
+  "author": "zhangke",
   "license": "MIT",
   "private": false,
   "main": "lib/t-ui-plus.umd.js",
@@ -18,7 +21,7 @@
     "global.d.ts"
   ],
   "scripts": {
-    "lib": "rimraf lib && vite build",
+    "lib": "node -e \"fs.rmSync('lib', { recursive: true, force: true })\" && vite build",
     "deploy": "deploy.sh",
     "pub": "npm publish --registry=https://registry.npmjs.org/",
     "prettier": "prettier --write \"packages/**/*.{js,ts,json,tsx,css,less,scss,vue,html,md}\"",

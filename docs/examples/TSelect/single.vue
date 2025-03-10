@@ -2,7 +2,7 @@
   <t-layout-page>
     <t-layout-page-item>
       <t-select
-        placeholder="请选择工序"
+        placeholder="请选择工序111"
         v-model="selectVlaue"
         :optionSource="stepList"
         valueCustom="label"

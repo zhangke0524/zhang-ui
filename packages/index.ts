@@ -10,6 +10,7 @@ import TTable from "./table"
 import TForm from "./form"
 import TSelect from "./select"
 import TSelectTable from "./select-table"
+import ZhangInput from "./zhang-input"
 import TDetail from "./detail"
 import TButton from "./button"
 import TStepWizard from "./step-wizard"
@@ -33,6 +34,7 @@ const components: {
   TTable,
   TForm,
   TSelect,
+  ZhangInput,
   TSelectTable,
   TDetail,
   TButton,
@@ -86,6 +88,7 @@ export {
   TTable,
   TForm,
   TSelect,
+  ZhangInput,
   TSelectTable,
   TDetail,
   TButton,

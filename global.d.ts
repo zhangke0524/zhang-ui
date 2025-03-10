@@ -6,6 +6,7 @@ import TTable from './lib/table/src/index.vue'
 import TForm from './lib/form/src/index.vue'
 import TSelect from './lib/select/src/index.vue'
 import TSelectTable from './lib/select-table/src/index.vue'
+import ZhangInput from './lib/zhang-input/src/index.vue'
 import TDetail from './lib/detail/src/index.vue'
 import TButton from './lib/button/src/index.vue'
 import TStepWizard from './lib/step-wizard/src/index.vue'
@@ -120,6 +121,7 @@ declare module '@vue/runtime-core' {
     TForm: typeof TForm
     TSelect: typeof TSelect
     TSelectTable: typeof TSelectTable
+    ZhangInput: typeof ZhangInput
     TDetail: typeof TDetail
     TButton: typeof TButton
     TStepWizard: typeof TStepWizard

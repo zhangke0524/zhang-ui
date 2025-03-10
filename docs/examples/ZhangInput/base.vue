@@ -1,18 +1,15 @@
 <template>
   <t-layout-page>
     <t-layout-page-item>
-      <t-select
-        placeholder="请选择工序234"
-        v-model="selectVlaue"
-        :optionSource="stepList"
-        valueCustom="label"
-        @change="selectChange"
-        multiple
+      <zhang-input
+        :label="'按钮-label-xxx'"
+        :type="'danger'"
+        width="200px"
       />
     </t-layout-page-item>
   </t-layout-page>
 </template>
-<script setup lang="ts" name="Multiple">
+<script setup lang="ts" name="ZhangInput">
 import { ref } from "vue"
 const selectVlaue = ref<any>()
 const stepList = [

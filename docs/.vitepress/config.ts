@@ -42,7 +42,8 @@ export default defineConfig({
           text: "常用组件",
           items: [
             { text: "输入框组件<el-tag type='danger'>v1.4.12</el-tag> ", link: "/components/TInput/base.md" },
-            { text: "下拉选择组件", link: "/components/TSelect/base.md" },
+            { text: "下拉选择组件-3", link: "/components/TSelect/base.md" },
+            { text: "zhangke-输入框组件", link: "/components/ZhangInput/base.md" },
             { text: "详情组件", link: "/components/TDetail/base.md" },
             { text: "Button组件", link: "/components/TButton/base.md" },
             { text: "Radio组件", link: "/components/TRadio/base.md" },

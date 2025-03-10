@@ -5,6 +5,7 @@ import TTable from "./table/src/index.vue"
 import TForm from "./form/src/index.vue"
 import TSelect from "./select/src/index.vue"
 import TSelectTable from "./select-table/src/index.vue"
+import ZhangInput from "./zhang-input/src/index.vue"
 import TDetail from "./detail/src/index.vue"
 import TButton from "./button/src/index.vue"
 import TStepWizard from "./step-wizard/src/index.vue"
@@ -28,6 +29,7 @@ declare module "vue" {
     TForm: typeof TForm
     TSelect: typeof TSelect
     TSelectTable: typeof TSelectTable
+    zhangInput: typeof ZhangInput
     TDetail: typeof TDetail
     TButton: typeof TButton
     TStepWizard: typeof TStepWizard

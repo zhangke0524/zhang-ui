@@ -24,7 +24,7 @@
         v-model="selectChecked"
         @change="selectAll"
         class="all_checkbox"
-        >全选</el-checkbox
+        >全选-zhang</el-checkbox
       >
       <el-option
         v-for="(item, index) in mergedOptions"
