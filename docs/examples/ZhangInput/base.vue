@@ -1,28 +1,43 @@
 <template>
   <t-layout-page>
     <t-layout-page-item>
-      <zhang-input
-        :label="'按钮-label-xxx'"
-        :type="'danger'"
-        width="200px"
-      />
+      <zhang-input ref="treeRef" :treeList="treeList" :isAddOrEditIng="isAddOrEditIng" @handleNodeClick="handleNodeClick" @addOrgNode="confirmAdd" @editOrgNode="confirmEdit" />
+      <t-button @click="reset">重置节点</t-button>
     </t-layout-page-item>
   </t-layout-page>
 </template>
 <script setup lang="ts" name="ZhangInput">
-import { ref } from "vue"
-const selectVlaue = ref<any>()
-const stepList = [
-  { label: "开始" },
-  { label: "POSUI" },
-  { label: "11" },
-  { label: "GX123" },
-  { label: "烘干破碎" },
-  { label: "车间仓库" },
-  { label: "ui3333" },
-  { label: "hhh333" }
-]
-const selectChange = (val: any) => {
-  console.log("selectChange", val, selectVlaue.value)
+import { ref } from 'vue';
+import { treeList } from './mockTreeData';
+import { set } from '@vueuse/core';
+
+const handleNodeClick = (node: any) => {
+  console.log('node', node);
+  // do something
+}
+
+const treeRef = ref<any>(null);
+
+const reset = () => {
+  treeRef.value?.resetSelectedNode();
+}
+
+let isAddOrEditIng = ref(false);
+const confirmAdd = (formData: any) => {
+  console.log('confirmAdd', formData);
+  // do something
+  isAddOrEditIng.value = true;
+  setTimeout(() => {
+    isAddOrEditIng.value = false;
+  }, 2000);
+}
+
+const confirmEdit = (formData: any) => {
+  console.log('confirmEdit', formData);
+  // do something
+  isAddOrEditIng.value = true;
+  setTimeout(() => {
+    isAddOrEditIng.value = false;
+  }, 2000);
 }
 </script>
